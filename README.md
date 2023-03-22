@@ -1,6 +1,15 @@
 ```
-py -m pip install -r requirements.txt
-python3 setup.py install
+Test
 ```
 
-This commands will install all the python packages and install the helper functions in `/util` directory to be used in the code. 
+
+## Beachten für den Vortrag
+* Segregation of Clients
+* Variable hinzufügen
+* Reality Check
+
+
+### Google Drive
+
+Data
+https://drive.google.com/file/d/1vGSA5OOABbL1QYFMUzHLa0T08fgeA19_/view?usp=drive_web
