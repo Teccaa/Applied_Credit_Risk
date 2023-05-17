@@ -4,7 +4,7 @@ digraph "Graph" {
 	subgraph cluster_input {
 		color=white
 		1 [label="InputLayer
-shape= 182" fillcolor=black fontcolor=white shape=egg style=filled]
+shape= 178" fillcolor=black fontcolor=white shape=egg style=filled]
 	}
 	1 -> 2
 	subgraph cluster_1 {

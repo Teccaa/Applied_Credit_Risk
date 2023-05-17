@@ -155,25 +155,29 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	20 -> 21
 	subgraph cluster_2 {
 		color=white
-		21 [label="Dropout
-Rate: 0.3" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
+		21 [label="BatchNormalization Layer" fillcolor=black fontcolor=white shape=egg style=filled]
 	}
 	21 -> 22
-	21 -> 23
-	21 -> 24
-	21 -> 25
-	21 -> 26
-	21 -> 27
-	21 -> 28
-	21 -> 29
-	21 -> 30
-	21 -> 31
 	subgraph cluster_3 {
 		color=white
+		22 [label="Dropout
+Rate: 0.3" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
+	}
+	22 -> 23
+	22 -> 24
+	22 -> 25
+	22 -> 26
+	22 -> 27
+	22 -> 28
+	22 -> 29
+	22 -> 30
+	22 -> 31
+	22 -> 32
+	subgraph cluster_4 {
+		color=white
 		rank=same
-		212121 [label="Units: 128 (+118 more)
+		222222 [label="Units: 128 (+118 more)
 Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
-		22 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		23 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		24 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		25 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -183,39 +187,43 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		29 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		30 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		31 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		32 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 	}
-	22 -> 32
-	23 -> 32
-	24 -> 32
-	25 -> 32
-	26 -> 32
-	27 -> 32
-	28 -> 32
-	29 -> 32
-	30 -> 32
-	31 -> 32
-	subgraph cluster_4 {
-		color=white
-		32 [label="Dropout
-Rate: 0.2" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
-	}
+	23 -> 33
+	24 -> 33
+	25 -> 33
+	26 -> 33
+	27 -> 33
+	28 -> 33
+	29 -> 33
+	30 -> 33
+	31 -> 33
 	32 -> 33
-	32 -> 34
-	32 -> 35
-	32 -> 36
-	32 -> 37
-	32 -> 38
-	32 -> 39
-	32 -> 40
-	32 -> 41
-	32 -> 42
 	subgraph cluster_5 {
 		color=white
+		33 [label="BatchNormalization Layer" fillcolor=black fontcolor=white shape=egg style=filled]
+	}
+	33 -> 34
+	subgraph cluster_6 {
+		color=white
+		34 [label="Dropout
+Rate: 0.2" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
+	}
+	34 -> 35
+	34 -> 36
+	34 -> 37
+	34 -> 38
+	34 -> 39
+	34 -> 40
+	34 -> 41
+	34 -> 42
+	34 -> 43
+	34 -> 44
+	subgraph cluster_7 {
+		color=white
 		rank=same
-		323232 [label="Units: 32 (+22 more)
+		343434 [label="Units: 64 (+54 more)
 Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
-		33 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
-		34 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		35 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		36 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		37 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -224,30 +232,83 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		40 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		41 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		42 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		43 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		44 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 	}
-	33 -> 43
-	34 -> 43
-	35 -> 43
-	36 -> 43
-	37 -> 43
-	38 -> 43
-	39 -> 43
-	40 -> 43
-	41 -> 43
-	42 -> 43
-	subgraph cluster_6 {
+	35 -> 45
+	36 -> 45
+	37 -> 45
+	38 -> 45
+	39 -> 45
+	40 -> 45
+	41 -> 45
+	42 -> 45
+	43 -> 45
+	44 -> 45
+	subgraph cluster_8 {
 		color=white
-		43 [label="Dropout
+		45 [label="BatchNormalization Layer" fillcolor=black fontcolor=white shape=egg style=filled]
+	}
+	45 -> 46
+	subgraph cluster_9 {
+		color=white
+		46 [label="Dropout
 Rate: 0.1" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
 	}
-	43 -> 44
+	46 -> 47
+	46 -> 48
+	46 -> 49
+	46 -> 50
+	46 -> 51
+	46 -> 52
+	46 -> 53
+	46 -> 54
+	46 -> 55
+	46 -> 56
+	subgraph cluster_10 {
+		color=white
+		rank=same
+		464646 [label="Units: 32 (+22 more)
+Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+		47 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		48 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		49 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		50 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		51 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		52 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		53 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		54 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		55 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+		56 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
+	}
+	47 -> 57
+	48 -> 57
+	49 -> 57
+	50 -> 57
+	51 -> 57
+	52 -> 57
+	53 -> 57
+	54 -> 57
+	55 -> 57
+	56 -> 57
+	subgraph cluster_11 {
+		color=white
+		57 [label="BatchNormalization Layer" fillcolor=black fontcolor=white shape=egg style=filled]
+	}
+	57 -> 58
+	subgraph cluster_12 {
+		color=white
+		58 [label="Dropout
+Rate: 0.1" fillcolor="#f39c12" fontcolor=black shape=Mcircle style=filled]
+	}
+	58 -> 59
 	subgraph cluster_output {
-		434343 [label="Output Units: 1
+		585858 [label="Output Units: 1
 Activation: sigmoid" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		labeljust=1
-		44 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		59 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
 	}
 	arrowShape=none
 }

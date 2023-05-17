@@ -24,7 +24,7 @@ digraph "Graph" {
 		rank=same
 		10
 		rank=same
-		111111 [label="Input Units: 182 (+172 more)
+		111111 [label="Input Units: 178 (+168 more)
 Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	}
 	1 -> 11
